@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu nombre">
+    <meta name="description" content="Formulario para solicitar asistencia técnica informática.">
+    <meta name="keywords" content="solicitud, asistencia técnica, informática">
+    <title>Web Taller Informático | Solicitud</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/formulari.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web Taller Informático</h1>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="solicitud.html" aria-current="page">Solicitud</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="acces">
+            <label for="sel-text">Tamaño del texto</label>
+            <select id="sel-text" name="sel-text">
+                <option value="normal">Normal</option>
+                <option value="gran">Grande</option>
+                <option value="molt-gran">Muy grande</option>
+            </select>
+
+            <button id="btn-tema" type="button"
+                    aria-pressed="false">
+                Modo oscuro
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="sollicitud">
+            <h2>Solicitud de asistencia técnica</h2>
+            <p>
+                Rellena el siguiente formulario para describir
+                tu incidencia informática.
+            </p>
+
+            <form id="form-sollicitud" novalidate>
+                <div class="campo">
+                    <label for="nom">Nombre completo *</label>
+                    <input type="text" id="nom" name="nom"
+                           class="camp" autocomplete="name"
+                           required minlength="3">
+                    <span class="error" id="error-nom"
+                          role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email"
+                           class="camp" autocomplete="email"
+                           required>
+                    <span class="error" id="error-email"
+                          role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="telefon">Teléfono (opcional)</label>
+                    <input type="tel" id="telefon" name="telefon"
+                           class="camp" autocomplete="tel"
+                           inputmode="numeric" pattern="[0-9]{9}"
+                           maxlength="9">
+                    <span class="error" id="error-telefon"
+                          role="alert"></span>
+                </div>
+
+                <fieldset>
+                    <legend>Tipo de equipo *</legend>
+
+                    <div id="equipo" class="grupo-radio">
+                        <label>
+                            <input type="radio" name="equipo"
+                                   value="Ordenador de sobremesa">
+                            Ordenador de sobremesa
+                        </label>
+
+                        <label>
+                            <input type="radio" name="equipo"
+                                   value="Portátil">
+                            Portátil
+                        </label>
+
+                        <label>
+                            <input type="radio" name="equipo"
+                                   value="Otro dispositivo">
+                            Otro dispositivo
+                        </label>
+                    </div>
+
+                    <span class="error" id="error-equipo"
+                          role="alert"></span>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="descripcion">
+                        Descripción de la incidencia *
+                    </label>
+                    <textarea id="descripcion" name="descripcion"
+                              class="camp" rows="6" required
+                              minlength="20"
+                              placeholder="Describe el problema con detalle..."></textarea>
+                    <span class="error" id="error-descripcion"
+                          role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label class="checkbox-label" for="privacitat">
+                        <input type="checkbox" id="privacitat"
+                               name="privacitat" required>
+                        Acepto el tratamiento de mis datos para gestionar
+                        esta solicitud. *
+                    </label>
+                    <span class="error" id="error-privacitat"
+                          role="alert"></span>
+                </div>
+
+                <p class="nota">* Campos obligatorios.</p>
+
+                <button type="submit">Enviar solicitud</button>
+                <button type="reset" class="boton-secundario">
+                    Limpiar formulario
+                </button>
+            </form>
+
+            <p id="resultat" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Taller Informático.</p>
+        <p>
+            <a href="https://creativecommons.org/licenses/by/4.0/deed.es"
+               target="_blank" rel="noopener noreferrer">
+                Licencia Creative Commons Reconocimiento 4.0
+            </a>
+        </p>
+        <address>
+            <a href="mailto:soporte@ejemplo.com">soporte@ejemplo.com</a>
+        </address>
+    </footer>
+</body>
+</html>

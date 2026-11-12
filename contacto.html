@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu nombre">
+    <meta name="description" content="Información de contacto del taller informático.">
+    <meta name="keywords" content="contacto, soporte informático, taller">
+    <title>Web Taller Informático | Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web Taller Informático</h1>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="solicitud.html">Solicitud</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="acces">
+            <label for="sel-text">Tamaño del texto</label>
+            <select id="sel-text" name="sel-text">
+                <option value="normal">Normal</option>
+                <option value="gran">Grande</option>
+                <option value="molt-gran">Muy grande</option>
+            </select>
+
+            <button id="btn-tema" type="button"
+                    aria-pressed="false">
+                Modo oscuro
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="contacte">
+            <h2>Contacta con nosotros</h2>
+
+            <p>
+                Si tienes dudas sobre nuestros servicios o necesitas
+                información, puedes contactar con el taller.
+            </p>
+
+            <div class="contacto-info">
+                <h3>Información de contacto</h3>
+
+                <address>
+                    <p>
+                        Correo electrónico:
+                        <a href="mailto:soporte@ejemplo.com">
+                            soporte@ejemplo.com
+                        </a>
+                    </p>
+                    <p>
+                        Teléfono:
+                        <a href="tel:+34960000000">960 000 000</a>
+                    </p>
+                    <p>Dirección: sustituye por la dirección de tu taller.</p>
+                </address>
+
+                <p>
+                    Para comunicar una avería, también puedes
+                    <a href="solicitud.html">rellenar el formulario</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Taller Informático.</p>
+        <p>
+            <a href="https://creativecommons.org/licenses/by/4.0/deed.es"
+               target="_blank" rel="noopener noreferrer">
+                Licencia Creative Commons Reconocimiento 4.0
+            </a>
+        </p>
+        <address>
+            <a href="mailto:soporte@ejemplo.com">soporte@ejemplo.com</a>
+        </address>
+    </footer>
+</body>
+</html>

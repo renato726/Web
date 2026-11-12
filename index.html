@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu nombre">
+    <meta name="description" content="Portal de servicios de asistencia técnica informática, mantenimiento y reparación de equipos.">
+    <meta name="keywords" content="informática, reparación, mantenimiento, asistencia técnica">
+    <title>Web Taller Informático | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web Taller Informático</h1>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="solicitud.html">Solicitud</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="acces">
+            <label for="sel-text">Tamaño del texto</label>
+            <select id="sel-text" name="sel-text">
+                <option value="normal">Normal</option>
+                <option value="gran">Grande</option>
+                <option value="molt-gran">Muy grande</option>
+            </select>
+
+            <button id="btn-tema" type="button"
+                    aria-pressed="false">
+                Modo oscuro
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="serveis">
+            <h2>Nuestros servicios</h2>
+            <p>
+                Ofrecemos soluciones informáticas para mantener tus
+                equipos en buen estado y solucionar problemas técnicos.
+            </p>
+
+            <div class="articles">
+                <article>
+                    <h3>Reparación de ordenadores</h3>
+                    <img src="assets/img/xarxes.jpg"
+                         alt="Servicio de reparación de un ordenador"
+                         loading="lazy">
+                    <p>
+                        Diagnóstico y reparación de problemas de hardware
+                        y software, equipos que no arrancan y fallos del
+                        sistema operativo.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Mantenimiento informático</h3>
+                    <img src="assets/img/manteniment.jpg"
+                         alt="Mantenimiento y limpieza de un equipo informático"
+                         loading="lazy">
+                    <p>
+                        Limpieza de componentes, actualizaciones,
+                        revisión del sistema y tareas de prevención
+                        para mejorar el funcionamiento del equipo.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Eliminación de virus</h3>
+                    <img src="assets/img/malware.jpg"
+                         alt="Protección y análisis de seguridad informática"
+                         loading="lazy">
+                    <p>
+                        Análisis de amenazas, eliminación de software
+                        malicioso y recomendaciones para proteger
+                        los datos personales.
+                    </p>
+                </article>
+            </div>
+
+            <p>
+                ¿Necesitas ayuda?
+                <a href="solicitud.html">Solicita asistencia técnica</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Taller Informático.</p>
+        <p>
+            Contenido publicado bajo licencia
+            <a href="https://creativecommons.org/licenses/by/4.0/deed.es"
+               target="_blank" rel="noopener noreferrer">
+                Creative Commons Reconocimiento 4.0 Internacional
+            </a>.
+        </p>
+        <address>
+            Contacto:
+            <a href="mailto:soporte@ejemplo.com">soporte@ejemplo.com</a>
+        </address>
+    </footer>
+</body>
+</html>
